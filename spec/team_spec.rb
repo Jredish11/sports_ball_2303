@@ -76,7 +76,7 @@ RSpec.describe Team do
     team.add_player(player_3)
     team.add_player(player_4)
 
-    expect(team.details).to eq({"total_value" => 85200000, "player_count" => 4})
+    expect(team.details).to eq({"total_value" => 85200001, "player_count" => 4})
   end
 
 end

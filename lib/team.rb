@@ -34,4 +34,13 @@ class Team
       "player_count" => @player_count
      }
   end
+
+  def average_cost_of_player
+    avg_cost = total_value / @player_count
+    avg_cost = avg_cost.to_s
+    avg_cost.insert(0, "$")
+    avg_cost.insert(3, ',')
+    avg_cost.insert(7, ',')
+    avg_cost
+  end
 end
