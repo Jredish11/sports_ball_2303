@@ -25,7 +25,13 @@ class Team
   def total_value
     @roster.sum do |player|
       player.contract_length * player.monthly_cost
-
     end
+  end
+
+  def details
+    details_hash = {
+      "total_value" => total_value, 
+      "player_count" => @player_count
+     }
   end
 end
