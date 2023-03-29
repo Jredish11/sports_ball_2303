@@ -7,4 +7,8 @@ class Player
     @first_name = name.split.first
     @last_name = name.split.last
   end
+
+  def total_cost
+    @monthly_cost * @contract_length
+  end
 end
