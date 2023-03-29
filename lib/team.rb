@@ -43,4 +43,10 @@ class Team
     avg_cost.insert(7, ',')
     avg_cost
   end
+
+  def players_by_last_name
+    @roster.map do |player|
+      player.last_name
+    end.sort.join(', ')
+  end
 end
